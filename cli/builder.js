@@ -152,7 +152,7 @@ function readPageNamespaces() {
 
 function hasExportName(data, name) {
   return data.match(
-    new RegExp(`export (const|var|let|async function|function) ${name}`)
+    new RegExp(`export (const|var|let|async function|function|{) ${name}`)
   )
 }
 
